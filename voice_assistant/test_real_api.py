@@ -2,8 +2,11 @@
 """Test pipeline with real Gemini API"""
 
 import sys
+import os
 import time
 from pathlib import Path
+from dotenv import load_dotenv
+
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from core.enhanced_agent import EnhancedVoiceAgent
@@ -17,11 +20,15 @@ from services import create_speech_service, create_audio_service
 from patterns import EntityExtractor, IntentClassifier
 from storage import ConversationLogger, CSVHandler
 
-# Real API Key
-API_KEY = "AIzaSyBoIOqwq_vEItxBfdbPPsMNVOl4odhYmzw"
+# Load API key from environment
+load_dotenv()
+API_KEY = os.getenv('GEMINI_API_KEY', '')
 
 def create_agent_with_real_api():
     """Create agent with real Gemini API"""
+    if not API_KEY:
+        raise ValueError("GEMINI_API_KEY not found in environment. Please set it in .env file.")
+
     print("🔧 Initializing agent with REAL Gemini API...")
 
     # Real LLM service
