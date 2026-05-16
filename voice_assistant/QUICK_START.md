@@ -283,7 +283,7 @@ voice_assistant/
 ## Next Steps
 
 1. **Explore Features**: Run `main.py` and try different input types
-2. **Review Documentation**: Check `ARCHITECTURE.md` and `USAGE_GUIDE.md`
+2. **Review Documentation**: Check [ARCHITECTURE.md](../docs/guides/ARCHITECTURE.md) and [USAGE_GUIDE.md](../docs/guides/USAGE_GUIDE.md)
 3. **Run Tests**: Execute test files to see all capabilities
 4. **Modify Code**: Customize intents, add entities, adjust responses
 5. **Integrate**: Use the Python API in your own applications
@@ -297,7 +297,7 @@ voice_assistant/
 
 ## API Documentation
 
-For detailed API reference, see [API_REFERENCE.md](API_REFERENCE.md)
+For detailed API reference, see [API_REFERENCE.md](../docs/guides/API_REFERENCE.md)
 
 ## Support & Contributing
 

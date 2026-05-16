@@ -25,7 +25,7 @@ class Settings:
     GEMINI_API_KEY = os.getenv('GEMINI_API_KEY', '')
 
     # LLM settings
-    LLM_MODEL = os.getenv('LLM_MODEL', 'gemini-pro')
+    LLM_MODEL = os.getenv('LLM_MODEL', 'gemini-2.5-flash')  # Latest Gemini model
     LLM_TEMPERATURE = float(os.getenv('LLM_TEMPERATURE', 0.7))
     LLM_MAX_TOKENS = int(os.getenv('LLM_MAX_TOKENS', 500))
 
