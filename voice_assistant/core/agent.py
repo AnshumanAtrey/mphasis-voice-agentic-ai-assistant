@@ -61,10 +61,10 @@ class VoiceAgent:
             if intent and intent != IntentType.FALLBACK:
                 handler = self.intent_handlers.get(intent)
                 if handler:
-                    # Build context for intent handler
                     context_data = {
                         'original': user_input,
                         'intent': intent,
+                        'history': self.context.get_history(),
                     }
                     response = handler.handle(context_data)
                 else:
