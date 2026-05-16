@@ -2,10 +2,20 @@
 
 Core implementation of the Voice Agentic AI Assistant. This directory contains the main application logic and pipeline.
 
+## 🚀 Live Demo
+
+**Try it now:** [mphasis-voice-agentic-ai-assistant.streamlit.app](https://mphasis-voice-agentic-ai-assistant.streamlit.app)
+
 ## Quick Start
 
 ```bash
-# Run the interactive CLI
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the Streamlit UI (recommended)
+streamlit run ui/streamlit_app.py
+
+# OR run the interactive CLI
 python3 main.py
 ```
 

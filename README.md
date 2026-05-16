@@ -2,10 +2,14 @@
 
 **A sophisticated voice-based AI assistant with advanced agentic capabilities, security hardening, and production-grade error handling.**
 
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Streamlit_Cloud-FF4B4B?style=for-the-badge)](https://mphasis-voice-agentic-ai-assistant.streamlit.app)
+
 ![Status](https://img.shields.io/badge/Status-Production%20Ready-green)
 ![Tests](https://img.shields.io/badge/Tests-71%2B%20%7C%20100%25%20Pass-brightgreen)
 ![Score](https://img.shields.io/badge/Hackathon%20Score-98%2F100-blue)
 ![License](https://img.shields.io/badge/License-MIT-blue)
+
+> 🎙️ **Try it now**: [mphasis-voice-agentic-ai-assistant.streamlit.app](https://mphasis-voice-agentic-ai-assistant.streamlit.app) — Speak into your microphone and hear AI responses in real-time
 
 ---
 
@@ -39,13 +43,24 @@
 
 ## 🚀 Quick Start
 
-### Installation
+### Option 1: Try Live Demo (Easiest)
+👉 **[Open the live app](https://mphasis-voice-agentic-ai-assistant.streamlit.app)** — no installation required, works in your browser with mic support
+
+### Option 2: Run Locally
+
+**Installation:**
 ```bash
 git clone https://github.com/AnshumanAtrey/mphasis-voice-agentic-ai-assistant.git
 cd mphasis-voice-agentic-ai-assistant/voice_assistant
+pip install -r requirements.txt
 ```
 
-### Run the Application
+**Run Streamlit UI:**
+```bash
+streamlit run ui/streamlit_app.py
+```
+
+**Run CLI:**
 ```bash
 python3 main.py
 ```
